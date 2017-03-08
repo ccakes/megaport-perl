@@ -11,8 +11,6 @@ use JSON::XS;
 use HTTP::Request;
 use LWP::UserAgent;
 
-use Data::Dumper::Simple;
-
 use Class::Tiny qw(token uri no_verify debug errstr), {
   ua => sub { LWP::UserAgent->new(agent => __PACKAGE__ . '/' . $VERSION) }
 };
