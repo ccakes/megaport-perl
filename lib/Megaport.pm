@@ -104,7 +104,19 @@ Returns a L<Megaport::Session> object which contains an authenticated client rea
 
 =item *
 
-Module/helper for per-service type to make data access easier (dig into VXCs/IX from top level service)
+Module/helper for per-service type to make data access easier
+
+=over
+
+=item *
+
+Dig into VXCs/IX from top level service
+
+=item *
+
+Access pricing/cost estimate info per service
+
+=back
 
 =item *
 
@@ -113,6 +125,10 @@ Simple service modification, speed/VLAN etc
 =item *
 
 Helper method to link partner ports and location to make searching by city/country/region easier
+
+=item *
+
+Company object with access to users, invoices and outstanding balance
 
 =back
 

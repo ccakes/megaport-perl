@@ -59,9 +59,12 @@ Returns a [Megaport::Session](https://metacpan.org/pod/Megaport::Session) object
 
 # TODO
 
-- Module/helper for per-service type to make data access easier (dig into VXCs/IX from top level service)
+- Module/helper for per-service type to make data access easier
+    - Dig into VXCs/IX from top level service
+    - Access pricing/cost estimate info per service
 - Simple service modification, speed/VLAN etc
 - Helper method to link partner ports and location to make searching by city/country/region easier
+- Company object with access to users, invoices and outstanding balance
 
 # AUTHOR
 
