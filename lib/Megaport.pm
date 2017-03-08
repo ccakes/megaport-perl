@@ -86,7 +86,7 @@ This module provides a Perl interface to the L<Megaport|https://www.megaport.com
       no_verify => 0
     );
 
-The fields C<token>, C<username> and C<password> are all auth relatated and should be fairly self explanatory. If you're unsure about token, take a look at the L<Megaport docs|https://dev.megaport.com/#security>>.
+The fields C<token>, C<username> and C<password> are all auth relatated and should be fairly self explanatory. If you're unsure about token, take a look at the L<Megaport docs|https://dev.megaport.com/#security>.
 
 C<debug> enables extra output to STDERR during API calls. L<Megaport::Client> by default will validate the token or user credentials by making a POST call to the Megaport API, set C<no_verify> to stop this and speed things up.
 
@@ -100,7 +100,21 @@ Returns a L<Megaport::Session> object which contains an authenticated client rea
 
 =head1 TODO
 
+=over
 
+=item *
+
+Module/helper for per-service type to make data access easier (dig into VXCs/IX from top level service)
+
+=item *
+
+Simple service modification, speed/VLAN etc
+
+=item *
+
+Helper method to link partner ports and location to make searching by city/country/region easier
+
+=back
 
 =head1 AUTHOR
 

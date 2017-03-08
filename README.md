@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/ccakes/megaport-perl.svg?branch=master)](https://travis-ci.org/ccakes/megaport-perl) [![MetaCPAN Release](https://badge.fury.io/pl/Megaport.svg)](https://metacpan.org/release/Megaport)
 Megaport - Simple access to the [Megaport](https://www.megaport.com) API
 
 # SYNOPSIS
@@ -44,7 +45,7 @@ This module provides a Perl interface to the [Megaport](https://www.megaport.com
       no_verify => 0
     );
 
-The fields `token`, `username` and `password` are all auth relatated and should be fairly self explanatory. If you're unsure about token, take a look at the [Megaport docs](https://dev.megaport.com/#security)>.
+The fields `token`, `username` and `password` are all auth relatated and should be fairly self explanatory. If you're unsure about token, take a look at the [Megaport docs](https://dev.megaport.com/#security).
 
 `debug` enables extra output to STDERR during API calls. [Megaport::Client](https://metacpan.org/pod/Megaport::Client) by default will validate the token or user credentials by making a POST call to the Megaport API, set `no_verify` to stop this and speed things up.
 
@@ -57,6 +58,10 @@ As at this writing, the production Megaport API is at https://api.megaport.com w
 Returns a [Megaport::Session](https://metacpan.org/pod/Megaport::Session) object which contains an authenticated client ready to start making calls.
 
 # TODO
+
+- Module/helper for per-service type to make data access easier (dig into VXCs/IX from top level service)
+- Simple service modification, speed/VLAN etc
+- Helper method to link partner ports and location to make searching by city/country/region easier
 
 # AUTHOR
 
