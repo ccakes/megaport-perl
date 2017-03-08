@@ -1,0 +1,6 @@
+name = "Megaport"
+# badges = ["travis"]
+authority="cpan:CDANIEL"
+
+module_maker="ModuleBuildTiny"
+
